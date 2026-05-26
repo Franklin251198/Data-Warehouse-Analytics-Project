@@ -35,7 +35,7 @@ Designed as a hands-on portfolio project, it highlights industry best practices 
 
 ## 🚀 Project Requirements
 
-### Building the Data Warehouse (Data Engineering)
+### Building the Data Warehouse 
 
 **Objective**  
 Develop a modern data warehouse using SQLite to consolidate Yelp data, enabling analytical reporting and informed decision-making for business performance, customer behavior, and review trends.
