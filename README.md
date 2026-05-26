@@ -173,8 +173,8 @@ The following data processing steps are applied:
    cd yelp-data-warehouse
    
 2. **Install dependencies**
-
-  pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 
 3. **Download Yelp dataset** from https://www.yelp.com/dataset
