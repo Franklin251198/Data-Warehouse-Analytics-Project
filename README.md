@@ -1,4 +1,4 @@
-# Data Warehouse and Analytics Project - Yelp
+# Data Warehouse and Analytics Project
 
 [![Python](https://img.shields.io/badge/Python-3.13-blue)](https://python.org)
 [![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite)](https://sqlite.org)
