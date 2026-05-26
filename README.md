@@ -15,7 +15,7 @@ Welcome to the **Yelp Data Warehouse and Analytics Project** repository! 🚀
 
 This project demonstrates a comprehensive end-to-end data warehousing and analytics solution for the Yelp Academic Dataset, covering the full journey from raw JSON ingestion to interactive Power BI dashboards.
 
-Designed as a hands-on portfolio project, it highlights industry best practices in data engineering and analytics, including **star schema design**, **data quality management**, **chunked ETL processing**, and **advanced SQL-based analytical reporting** with 50+ queries.
+Designed as a hands-on portfolio project, it highlights industry best practices in data engineering and analytics, including **star schema design**, **data quality management**, **chunked ETL processing**, and **advanced SQL-based analytical reporting**.
 
 ---
 
