@@ -28,7 +28,7 @@ Designed as a hands-on portfolio project, it highlights industry best practices 
 | Users | 1.9M |
 | Reviews | 6M+ |
 | Tips | 900K+ |
-| Query Performance Gain | ~50% |
+| Query Performance Gain | ~40% |
 | DAX Measures | 15+ |
 
 ---
