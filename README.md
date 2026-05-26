@@ -159,30 +159,8 @@ The following data processing steps are applied:
 ---
 
 ## 📁 Repository Structure
-yelp-data-warehouse/
-│
-├── data/
-│ ├── business.json # Raw source data (not committed - too large)
-│ ├── review.json # Raw source data (not committed - too large)
-│ ├── user.json # Raw source data (not committed - too large)
-│ ├── tip.json # Raw source data (not committed - too large)
-│ ├── checkin.json # Raw source data (not committed - too large)
-│ └── yelp.db # SQLite database (not committed - too large)
-│
-├── notebooks/
-│ ├── Ingest.ipynb # Step 1-2: Raw ingestion + chunking
-│ ├── Transform.ipynb # Step 3: Data preparation & quality
-│ └── Load_data_to_sqldatabase.ipynb # Step 4-5: Warehouse + SQL analysis
-│
-├── docs/
-│ ├── Yelp Star Schema 50 Sql Queries.pdf # Complete SQL documentation
-│ └── Datawarehouse+ analytics yelprject.docx # Project documentation
-│
-├── powerbi/
-│ └── yelp_dashboard.pbix # Power BI dashboard file
-│
-├── .gitignore
-└── README.md
+
+<img width="482" height="438" alt="image" src="https://github.com/user-attachments/assets/deb07a44-9632-4009-b852-38fd78336586" />
 
 
 
