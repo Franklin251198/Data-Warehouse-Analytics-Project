@@ -3,6 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.13-blue)](https://python.org)
 [![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite)](https://sqlite.org)
 [![PowerBI](https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi)](https://powerbi.microsoft.com)
+[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?logo=visualstudiocode)](https://code.visualstudio.com)
 [![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter)](https://jupyter.org)
 [![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas)](https://pandas.pydata.org)
 [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-FF0000?logo=sqlalchemy)](https://www.sqlalchemy.org)
