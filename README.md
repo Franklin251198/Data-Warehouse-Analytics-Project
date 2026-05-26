@@ -18,9 +18,7 @@ Designed as a hands-on portfolio project, it highlights industry best practices 
 | Reviews | 6M+ |
 | Tips | 900K+ |
 | Query Performance Gain | ~50% |
-| SQL Queries Written | 50 |
 | DAX Measures | 15+ |
-| Power BI Dashboards | 4 |
 
 ---
 
