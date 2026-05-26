@@ -1,5 +1,15 @@
 # Data Warehouse and Analytics Project - Yelp
 
+[![Python](https://img.shields.io/badge/Python-3.13-blue)](https://python.org)
+[![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite)](https://sqlite.org)
+[![PowerBI](https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi)](https://powerbi.microsoft.com)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter)](https://jupyter.org)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas)](https://pandas.pydata.org)
+[![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-FF0000?logo=sqlalchemy)](https://www.sqlalchemy.org)
+[![ODBC](https://img.shields.io/badge/ODBC-0066CC?logo=databricks)](https://learn.microsoft.com/en-us/sql/odbc)
+[![Git](https://img.shields.io/badge/Git-F05032?logo=git)](https://git-scm.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github)](https://github.com)
+
 Welcome to the **Yelp Data Warehouse and Analytics Project** repository! 🚀
 
 This project demonstrates a comprehensive end-to-end data warehousing and analytics solution for the Yelp Academic Dataset, covering the full journey from raw JSON ingestion to interactive Power BI dashboards.
