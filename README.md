@@ -51,9 +51,6 @@ Develop a modern data warehouse using SQLite to consolidate Yelp data, enabling 
 | **Scope** | Focus on complete dataset with referential integrity |
 | **Documentation** | Provide clear data model documentation and 50 SQL analytical queries |
 
-
---- 
-
 ### 📊 BI: Analytics & Reporting (Data Analytics)
 
 **Objective**  
