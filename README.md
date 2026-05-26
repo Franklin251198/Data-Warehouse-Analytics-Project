@@ -1,8 +1,11 @@
 # Yelp-Data-Warehouse-Analytics-Project
 
 https://img.shields.io/badge/Python-3.13-blue
+
 https://img.shields.io/badge/SQLite-003B57?logo=sqlite
+
 https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi
+
 https://img.shields.io/badge/Jupyter-F37626?logo=jupyter
 
 
