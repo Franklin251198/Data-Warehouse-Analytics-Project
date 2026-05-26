@@ -124,7 +124,7 @@ The following data processing steps are applied:
 | **Duplicate Removal** | Checked all tables using `duplicated().sum()` – no duplicates found |
 | **Data Type Standardization** | Converted all columns to string during ingestion, then typed appropriately |
 | **Null Value Handling** | Identified and documented columns with missing values |
-| **Foreign Key Integrity** | Validated business_id and user_id references; removed 40 invalid review rows |
+| **Foreign Key Integrity** | Validated business_id and user_id references; removed 32 invalid review rows |
 | **Date Transformation** | Converted date strings to datetime objects; created date dimension |
 | **Chunked Processing** | Processed 6M+ review rows in 10K chunks for memory efficiency |
 
