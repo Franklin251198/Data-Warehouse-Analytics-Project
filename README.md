@@ -164,21 +164,6 @@ The following data processing steps are applied:
 
 ## 📁 Repository Structure
 
-yelp-data-warehouse/
-│
-├── dataset/
-│
-├── Scripts/
-│   ├── Ingest.ipynb                   # Step 1 & 2: Raw ingestion + chunking
-│   ├── Transform.ipynb                # Step 3: Data preparation
-│   └── Load.ipynb                     # Step 4 & 5: Warehouse + SQL
-│
-├── docs/
-│   └── Yelp Star Schema 50 Sql Queries.pdf
-│
-├── powerbi/
-│   └── yelp_dashboard.pbix
-│
-└── README.md
+<img width="806" height="295" alt="image" src="https://github.com/user-attachments/assets/e6f5c17d-14ed-4bc1-980a-138f0d8a6f09" />
 
   
