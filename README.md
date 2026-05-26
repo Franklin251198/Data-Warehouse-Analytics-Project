@@ -56,36 +56,113 @@ These insights empower stakeholders with key business metrics, enabling data-dri
 ---
 
 ## 🏗️ System Architecture
-┌─────────────────────────────────────────────────────────────────────────────────────┐
-│                                    DATA PIPELINE                                     │
-└─────────────────────────────────────────────────────────────────────────────────────┘
 
-┌──────────────┐     ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-│   RAW JSON   │────▶│   CHUNKING   │────▶│    DATA      │────▶│   BUILDING   │
-│    FILES     │     │  (10K rows)  │     │ PREPARATION  │     │ DATA WAREHOUSE│
-│              │     │              │     │              │     │ (Star Schema) │
-└──────────────┘     └──────────────┘     └──────────────┘     └──────────────┘
-       │                    │                    │                    │
-       ▼                    ▼                    ▼                    ▼
-  business.json        Memory-efficient      Duplicate Checks      dim_business
-  review.json          batch processing      Null Validation       dim_user
-  user.json                                   FK Integrity          dim_date
-  tip.json                                    Date Conversion       fact_reviews
-  checkin.json            
-                                                                         │
-                                                                         ▼
-                     ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-                     │   POWER BI   │◀────│    ODBC      │◀────│     SQL      │
-                     │  DASHBOARDS  │     │   DRIVER     │     │  DATABASE    │
-                     │              │     │              │     │  (SQLite)    │
-                     └──────────────┘     └──────────────┘     └──────────────┘
-                            │                    │                    │
-                            ▼                    ▼                    ▼
-                       Overview              Connection           yelp.db
-                      Customer Analysis     Configuration         (Warehouse
-                      Business Performance                         Tables)
-                      Geographic & Time
 
+
+---
+
+## 📁 Dataset
+
+The Yelp Academic Dataset includes 5 JSON files:
+
+| File | Rows | Description |
+|------|------|-------------|
+| business.json | 150K+ | Business attributes (name, location, categories, ratings) |
+| review.json | 6M | User reviews with ratings and engagement metrics |
+| user.json | 1.9M | User profiles (yelping_since, fans, elite status) |
+| tip.json | 900K+ | Short tips left by users |
+| checkin.json | 130K+ | Check-in records per business |
+
+---
+
+## 🗄️ Data Warehouse Design
+
+The data warehouse is designed using a **dimensional (star schema)** model optimized for analytical workloads.
+
+### Fact Table
+
+**fact_reviews**
+- review_id (Primary Key)
+- business_id (Foreign Key)
+- user_id (Foreign Key)
+- date_key (Foreign Key)
+- review_stars
+- useful_votes
+- funny_votes
+- cool_votes
+
+### Dimension Tables
+
+| Table | Attributes |
+|-------|------------|
+| **dim_business** | business_id, name, city, state, latitude, longitude, categories, business_stars, business_review_count |
+| **dim_user** | user_id, name, yelping_since, fans, average_stars, user_review_count, elite |
+| **dim_date** | date_key, year, month, day, quarter, day_name, month_name |
+
+### Star Schema Visual
+<img width="636" height="545" alt="image" src="https://github.com/user-attachments/assets/552ff74a-27be-491a-8e80-95f064c03713" />
+
+
+
+This design ensures high query performance and intuitive reporting, achieving **~50% faster query execution**.
+
+---
+
+## 🧪 Data Quality & Transformation
+
+The following data processing steps are applied:
+
+| Step | Description |
+|------|-------------|
+| **Duplicate Removal** | Checked all tables using `duplicated().sum()` – no duplicates found |
+| **Data Type Standardization** | Converted all columns to string during ingestion, then typed appropriately |
+| **Null Value Handling** | Identified and documented columns with missing values |
+| **Foreign Key Integrity** | Validated business_id and user_id references; removed 40 invalid review rows |
+| **Date Transformation** | Converted date strings to datetime objects; created date dimension |
+| **Chunked Processing** | Processed 6M+ review rows in 10K chunks for memory efficiency |
+
+---
+
+## 📊 SQL Analytics
+
+### Query Categories
+
+| Category | Techniques | Example Questions |
+|----------|------------|-------------------|
+| **Aggregation** | COUNT, AVG, SUM, GROUP BY | Total reviews, avg ratings by city |
+| **Ranking** | RANK(), DENSE_RANK(), LIMIT | Top 10 businesses, most active users |
+| **Window Functions** | OVER(), PARTITION BY, LAG | Running totals, YoY growth |
+| **CTEs** | WITH clause | Business engagement categorization |
+| **Subqueries** | Correlated & non-correlated | Businesses above city average |
+| **CASE Statements** | CASE WHEN | Elite vs normal user segmentation |
+| **NTILE** | Quartile segmentation | User activity level grouping |
+
+
+
+yelp-data-warehouse/
+│
+├── data/
+│   ├── business.json          # Raw source data (not committed - too large)
+│   ├── review.json            # Raw source data (not committed - too large)
+│   ├── user.json              # Raw source data (not committed - too large)
+│   ├── tip.json               # Raw source data (not committed - too large)
+│   ├── checkin.json           # Raw source data (not committed - too large)
+│   └── yelp.db                # SQLite database (not committed - too large)
+│
+├── notebooks/
+│   ├── Ingest.ipynb           # Step 1-2: Raw ingestion + chunking
+│   ├── Transform.ipynb        # Step 3: Data preparation & quality
+│   └── Load_data_to_sqldatabase.ipynb  # Step 4-5: Warehouse + SQL analysis
+│
+├── docs/
+│   ├── Yelp Star Schema 50 Sql Queries.pdf  # Complete SQL documentation
+│   └── Datawarehouse+ analytics yelprject.docx  # Project documentation
+│
+├── powerbi/
+│   └── yelp_dashboard.pbix     # Power BI dashboard file
+│
+├── .gitignore
+└── README.md
 
 
 
