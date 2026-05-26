@@ -58,7 +58,7 @@ These insights empower stakeholders with key business metrics, enabling data-dri
 
 ## 🏗️ System Architecture
 
-
+<img width="486" height="446" alt="image" src="https://github.com/user-attachments/assets/20bda626-2844-4fd1-8a22-9eb9742d55cf" />
 
 ---
 
