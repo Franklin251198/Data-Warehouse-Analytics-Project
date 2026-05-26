@@ -74,17 +74,17 @@ These insights empower stakeholders with key business metrics, enabling data-dri
   checkin.json            
                                                                          │
                                                                          ▼
-┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-│   POWER BI   │◀────│    ODBC      │◀────│     SQL      │
-│  DASHBOARDS  │     │   DRIVER     │     │  DATABASE    │
-│              │     │              │     │  (SQLite)    │
-└──────────────┘     └──────────────┘     └──────────────┘
-       │                    │                    │
-       ▼                    ▼                    ▼
-  Overview              Connection           yelp.db
-  Customer Analysis    Configuration         (Warehouse
-  Business Performance                        Tables)
-  Geographic & Time
+                     ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+                     │   POWER BI   │◀────│    ODBC      │◀────│     SQL      │
+                     │  DASHBOARDS  │     │   DRIVER     │     │  DATABASE    │
+                     │              │     │              │     │  (SQLite)    │
+                     └──────────────┘     └──────────────┘     └──────────────┘
+                            │                    │                    │
+                            ▼                    ▼                    ▼
+                       Overview              Connection           yelp.db
+                      Customer Analysis     Configuration         (Warehouse
+                      Business Performance                         Tables)
+                      Geographic & Time
 
 
 
