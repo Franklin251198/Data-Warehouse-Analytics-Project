@@ -137,7 +137,35 @@ The following data processing steps are applied:
 | **CASE Statements** | CASE WHEN | Elite vs normal user segmentation |
 | **NTILE** | Quartile segmentation | User activity level grouping |
 
+## 🧪 Data Quality & Transformation
 
+The following data processing steps are applied:
+
+| Step | Description |
+|------|-------------|
+| **Duplicate Removal** | Checked all tables using `duplicated().sum()` – no duplicates found |
+| **Data Type Standardization** | Converted all columns to string during ingestion, then typed appropriately |
+| **Null Value Handling** | Identified and documented columns with missing values |
+| **Foreign Key Integrity** | Validated business_id and user_id references; removed 40 invalid review rows |
+| **Date Transformation** | Converted date strings to datetime objects; created date dimension |
+| **Chunked Processing** | Processed 6M+ review rows in 10K chunks for memory efficiency |
+
+## 🛠️ Tools & Technologies
+
+| Category | Technology |
+|----------|------------|
+| Database | SQLite |
+| Language | Python, SQL |
+| Libraries | pandas, SQLAlchemy |
+| Data Modeling | Star Schema |
+| Source Data | Yelp JSON Dataset |
+| Analytics | SQL Queries, Pandas |
+| Visualization | Power BI |
+| Development Environment | Jupyter Notebook, VS Code |
+| Version Control | Git & GitHub |
+
+
+## 📁 Repository Structure
 
 yelp-data-warehouse/
 │
