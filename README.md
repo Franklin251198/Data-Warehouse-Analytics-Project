@@ -100,13 +100,6 @@ The data warehouse is designed using a **dimensional (star schema)** model optim
 | **dim_user** | user_id, name, yelping_since, fans, average_stars, user_review_count, elite |
 | **dim_date** | date_key, year, month, day, quarter, day_name, month_name |
 
-
-### Star Schema Visual
-
-<img width="636" height="545" alt="image" src="https://github.com/user-attachments/assets/552ff74a-27be-491a-8e80-95f064c03713" />
-
-
-
 This design ensures high query performance and intuitive reporting, achieving **~50% faster query execution**.
 
 ---
