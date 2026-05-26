@@ -40,6 +40,9 @@ Develop a modern data warehouse using SQLite to consolidate Yelp data, enabling 
 | **Scope** | Focus on complete dataset with referential integrity |
 | **Documentation** | Provide clear data model documentation and 50 SQL analytical queries |
 
+
+--- 
+
 ### 📊 BI: Analytics & Reporting (Data Analytics)
 
 **Objective**  
@@ -97,7 +100,9 @@ The data warehouse is designed using a **dimensional (star schema)** model optim
 | **dim_user** | user_id, name, yelping_since, fans, average_stars, user_review_count, elite |
 | **dim_date** | date_key, year, month, day, quarter, day_name, month_name |
 
+---
 ### Star Schema Visual
+
 <img width="636" height="545" alt="image" src="https://github.com/user-attachments/assets/552ff74a-27be-491a-8e80-95f064c03713" />
 
 
@@ -135,18 +140,7 @@ The following data processing steps are applied:
 | **CASE Statements** | CASE WHEN | Elite vs normal user segmentation |
 | **NTILE** | Quartile segmentation | User activity level grouping |
 
-## 🧪 Data Quality & Transformation
-
-The following data processing steps are applied:
-
-| Step | Description |
-|------|-------------|
-| **Duplicate Removal** | Checked all tables using `duplicated().sum()` – no duplicates found |
-| **Data Type Standardization** | Converted all columns to string during ingestion, then typed appropriately |
-| **Null Value Handling** | Identified and documented columns with missing values |
-| **Foreign Key Integrity** | Validated business_id and user_id references; removed 40 invalid review rows |
-| **Date Transformation** | Converted date strings to datetime objects; created date dimension |
-| **Chunked Processing** | Processed 6M+ review rows in 10K chunks for memory efficiency |
+---
 
 ## 🛠️ Tools & Technologies
 
@@ -162,34 +156,33 @@ The following data processing steps are applied:
 | Development Environment | Jupyter Notebook, VS Code |
 | Version Control | Git & GitHub |
 
+---
 
 ## 📁 Repository Structure
-
 yelp-data-warehouse/
 │
 ├── data/
-│   ├── business.json          # Raw source data (not committed - too large)
-│   ├── review.json            # Raw source data (not committed - too large)
-│   ├── user.json              # Raw source data (not committed - too large)
-│   ├── tip.json               # Raw source data (not committed - too large)
-│   ├── checkin.json           # Raw source data (not committed - too large)
-│   └── yelp.db                # SQLite database (not committed - too large)
+│ ├── business.json # Raw source data (not committed - too large)
+│ ├── review.json # Raw source data (not committed - too large)
+│ ├── user.json # Raw source data (not committed - too large)
+│ ├── tip.json # Raw source data (not committed - too large)
+│ ├── checkin.json # Raw source data (not committed - too large)
+│ └── yelp.db # SQLite database (not committed - too large)
 │
 ├── notebooks/
-│   ├── Ingest.ipynb           # Step 1-2: Raw ingestion + chunking
-│   ├── Transform.ipynb        # Step 3: Data preparation & quality
-│   └── Load_data_to_sqldatabase.ipynb  # Step 4-5: Warehouse + SQL analysis
+│ ├── Ingest.ipynb # Step 1-2: Raw ingestion + chunking
+│ ├── Transform.ipynb # Step 3: Data preparation & quality
+│ └── Load_data_to_sqldatabase.ipynb # Step 4-5: Warehouse + SQL analysis
 │
 ├── docs/
-│   ├── Yelp Star Schema 50 Sql Queries.pdf  # Complete SQL documentation
-│   └── Datawarehouse+ analytics yelprject.docx  # Project documentation
+│ ├── Yelp Star Schema 50 Sql Queries.pdf # Complete SQL documentation
+│ └── Datawarehouse+ analytics yelprject.docx # Project documentation
 │
 ├── powerbi/
-│   └── yelp_dashboard.pbix     # Power BI dashboard file
+│ └── yelp_dashboard.pbix # Power BI dashboard file
 │
 ├── .gitignore
 └── README.md
-
 
 
 
