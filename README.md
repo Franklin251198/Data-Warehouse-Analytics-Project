@@ -174,8 +174,8 @@ The following data processing steps are applied:
    
 2. **Install dependencies**
 
-  ```bash
   pip install -r requirements.txt
+
 
 3. **Download Yelp dataset** from https://www.yelp.com/dataset
 
