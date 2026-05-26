@@ -163,4 +163,26 @@ The following data processing steps are applied:
 
 <img width="806" height="295" alt="image" src="https://github.com/user-attachments/assets/e6f5c17d-14ed-4bc1-980a-138f0d8a6f09" />
 
+---
+
+## 🚀 How to Run This Project
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/yourusername/yelp-data-warehouse.git
+   cd yelp-data-warehouse
+   
+2. **Install dependencies**
+
+  bash
+  pip install -r requirements.txt
+
+3. **Download Yelp dataset** from https://www.yelp.com/dataset
+
+4. **Update file path** in scripts/Ingest.ipynb (line with folder_path)
+
+5. **Run notebooks in order**: Ingest → Transform → Load_data_to_sqldatabase
+
+6. **Connect Power BI** using ODBC driver to the generated yelp.db
+
   
