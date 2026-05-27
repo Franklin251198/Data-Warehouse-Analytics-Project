@@ -165,7 +165,30 @@ The following data processing steps are applied:
 
 ## 📁 Repository Structure
 
-<img width="806" height="295" alt="image" src="https://github.com/user-attachments/assets/e6f5c17d-14ed-4bc1-980a-138f0d8a6f09" />
+```bash
+yelp-data-warehouse/
+│
+├── Dashboard/
+│   ├── Business_Performance.png
+│   ├── Customer_Analysis.png
+│   ├── Geographic_&_Time_Analysis.png
+│   └── Overview.png
+│
+├── Dataset/
+│   └── Dataset Link.txt              # Google Drive dataset link
+│
+├── Docs/
+│   └── Yelp Star Schema 50 Sql Queries.pdf
+│
+├── Scripts/
+│   ├── Ingest.ipynb                  # Step 1 & 2: Raw ingestion + chunking
+│   ├── Transform.ipynb               # Step 3: Data preparation
+│   └── Load.ipynb                    # Step 4 & 5: Warehouse + SQL
+│
+├── .gitignore
+├── LICENSE
+│
+└── README.md
 
 ---
 
