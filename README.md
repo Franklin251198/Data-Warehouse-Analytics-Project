@@ -197,10 +197,11 @@ yelp-data-warehouse/
 │   └── Overview.png
 │
 ├── Dataset/
-│   └── Dataset Link.txt              # Google Drive dataset link
+│   └── Dataset Link
 │
 ├── Docs/
-│   └── Yelp Star Schema 50 Sql Queries.pdf
+│   ├── Yelp Star Schema 50 Sql Queries.pdf
+│   └── Star_schema.png
 │
 ├── Scripts/
 │   ├── Ingest.ipynb                  # Step 1 & 2: Raw ingestion + chunking
