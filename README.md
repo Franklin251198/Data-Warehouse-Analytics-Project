@@ -11,7 +11,7 @@
 [![Git](https://img.shields.io/badge/Git-F05032?logo=git)](https://git-scm.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github)](https://github.com)
 
-Welcome to the **Yelp Data Warehouse and Analytics Project** repository! 🚀
+Welcome to the **Data Warehouse and Analytics Project** repository! 🚀
 
 This project demonstrates a comprehensive end-to-end data warehousing and analytics solution for the Yelp Academic Dataset, covering the full journey from raw JSON ingestion to interactive Power BI dashboards.
 
