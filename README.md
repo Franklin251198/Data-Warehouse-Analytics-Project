@@ -188,7 +188,6 @@ The following data processing steps are applied:
 ## 📁 Repository Structure
 
 ```bash
-yelp-data-warehouse/
 │
 ├── Dashboard/
 │   ├── Business_Performance.png
@@ -204,13 +203,13 @@ yelp-data-warehouse/
 │   └── Star_schema.png
 │
 ├── Scripts/
-│   ├── Ingest.ipynb                  # Step 1 & 2: Raw ingestion + chunking
-│   ├── Transform.ipynb               # Step 3: Data preparation
-│   └── Load.ipynb                    # Step 4 & 5: Warehouse + SQL
+│   ├── Ingest.ipynb
+│   ├── Transform.ipynb
+│   └── Load.ipynb
 │
+├── requirements.txt        # pip install -r requirements.txt
 ├── .gitignore
 ├── LICENSE
 │
 └── README.md
-
   
