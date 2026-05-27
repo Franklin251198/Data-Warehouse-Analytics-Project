@@ -18,7 +18,11 @@ This project demonstrates a comprehensive end-to-end data warehousing and analyt
 Designed as a hands-on portfolio project, it highlights industry best practices in data engineering and analytics, including **star schema design**, **data quality management**, **chunked ETL processing**, and **advanced SQL-based analytical reporting**.
 
 ---
+## 📊 Dashboard Preview
 
+<img width="884" height="498" alt="Overview" src="https://github.com/user-attachments/assets/e7435deb-deed-4427-a15e-2b934e559ada" />
+
+---
 ## 📊 Project Stats
 
 | Metric | Value |
