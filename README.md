@@ -20,7 +20,7 @@ Designed as a hands-on portfolio project, it highlights industry best practices 
 ---
 ## 📊 Dashboard Preview
 
-<img width="884" height="498" alt="Overview" src="https://github.com/user-attachments/assets/e7435deb-deed-4427-a15e-2b934e559ada" />
+<img width="900" height="498" alt="Overview" src="https://github.com/user-attachments/assets/e7435deb-deed-4427-a15e-2b934e559ada" />
 
 ---
 ## 📊 Project Stats
